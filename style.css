@@ -13,11 +13,18 @@ Text Domain: theme-eddy
 https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
 :root {
-  --couleur-arriere-entete: #618aad;
-  --couleur-arriere-accueil: #0f0;
-  --couleur-arriere-evenement: #045;
-  --couleur-arriere-galerie: rgb(223, 230, 42);
-  --couleur-arriere-footer: #630;
+  /*variables couleurs*/
+  --couleur-arriere-entete: #0088ff;
+  --couleur-arriere-accueil: #0068ff;
+  --couleur-arriere-evenement: #0048ff;
+  --couleur-arriere-galerie: #0028ff;
+  --couleur-arriere-footer: #0008ff;
+  /*variables transparence*/
+  --transparence-entete: 0.8;
+  --transparence-body: 0.5;
+  --transparence-footer: 0.35;
+  /*variables largeurs*/
+  --body-largeur: 900px;
 }
 
 * {
@@ -28,7 +35,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Prompt", sans-serif;
+  font-family: "Protest Strike", sans-serif;
 }
 
 .global {
@@ -40,12 +47,23 @@ body {
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 1100px;
-  border: 1px solid #aaa;
+  flex: 0 1 var(--body-largeur);
+  padding: 3rem 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#entete, #footer {
+  min-height: 20vh;
 }
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #accueil {
@@ -69,12 +87,21 @@ https://chrisburnell.com/clamp-calculator/
 */
 h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
+  color: rgba(255, 255, 255, var(--transparence-entete));
 }
 
 h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
+  color: rgba(255, 255, 255, var(--transparence-body));
+}
+
+h3 {
+  font-size: clamp(1rem, 0.844rem + 0.5vw, 1.125rem);
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(255, 255, 255, var(--transparence-footer));
 }/*# sourceMappingURL=style.css.map */
