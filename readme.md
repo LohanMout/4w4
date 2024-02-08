@@ -1,10 +1,12 @@
 # Labo 1
-## Introduction a Sass et revision de HTML/CSS
+## Tous les ajouts pour la remise:
 
-- Un dossier Sassqui contient :
-    - un sous dossier base
-        - _h.scss
-        - _liens.scss
-    - style.scss
-- Creation d'une pagination avec flexbox
-- Utilisation de polices google font
+- Background color en dégradé bleu marin
+- Ajouts de nouvelles variables
+    -Differents niveaux de transparence
+    -Une taille pour le body
+- Changement de chaques H dans la page
+    - Tous les H on un clamps différents (de plus en plus petit)
+    - Tous les H ont une transparence approprié
+    Tous les H ont un font weight approprié
+

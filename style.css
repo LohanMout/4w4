@@ -93,36 +93,36 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+  font-size: clamp(1rem, -1.656rem + 8.5vw, 3.125rem);
   font-weight: 400;
   font-style: normal;
   color: rgba(255, 255, 255, var(--transparence-body));
 }
 
 h3 {
-  font-size: clamp(1rem, 0.844rem + 0.5vw, 1.125rem);
+  font-size: clamp(1rem, -0.813rem + 5.8vw, 2.813rem);
   font-weight: 400;
   font-style: normal;
-  color: rgba(255, 255, 255, var(--transparence-footer));
+  color: rgba(255, 255, 255, var(--transparence-body));
 }
 
 h4 {
-  font-size: clamp(0.875rem, 0.563rem + 1vw, 1.125rem);
+  font-size: clamp(1rem, -0.5rem + 4.8vw, 2.5rem);
   font-weight: 400;
   font-style: normal;
   color: rgba(255, 255, 255, var(--transparence-body));
 }
 
 h5 {
-  font-size: clamp(1rem, 0.643rem + 1vw, 1.286rem);
+  font-size: clamp(1rem, -0.188rem + 3.8vw, 2.188rem);
   font-weight: 300;
   font-style: normal;
-  color: rgba(222, 222, 222, var(--transparence-body));
+  color: rgba(222, 222, 222, var(--transparence-footer));
 }
 
 h6 {
-  font-size: clamp(0.857rem, 0.5rem + 1vw, 1.143rem);
+  font-size: clamp(1rem, 0.75rem + 0.8vw, 1.25rem);
   font-weight: 300;
   font-style: normal;
-  color: rgba(197, 197, 197, var(--transparence-body));
+  color: rgba(197, 197, 197, var(--transparence-footer));
 }/*# sourceMappingURL=style.css.map */
