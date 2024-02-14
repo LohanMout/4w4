@@ -14,11 +14,29 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
 :root {
   /*variables couleurs*/
-  --couleur-arriere-entete: #0088ff;
-  --couleur-arriere-accueil: #0068ff;
-  --couleur-arriere-evenement: #0048ff;
-  --couleur-arriere-galerie: #0028ff;
-  --couleur-arriere-footer: #0008ff;
+  /*--couleur-arriere-entete : #0088ff;
+  --couleur-arriere-accueil : #0068ff;
+  --couleur-arriere-evenement : #0048ff;
+  --couleur-arriere-galerie : #0028ff;
+  --couleur-arriere-footer : #0008ff;*/
+  --u1: 180;
+  --u2: calc(var(--u1) + 10);
+  --u3: calc(var(--u2) + 10);
+  --u4: calc(var(--u3) + 10);
+  --s-arriere: 100%;
+  --s-avant: 50%;
+  --l-arriere: 30%;
+  --l-avant: 20%;
+  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-footer: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+  --couleur-avant-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --couleur-avant-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
+  --couleur-avant-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
+  --couleur-avant-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
+  --couleur-avant-footer: hsl(var(--u4), var(--s-avant), var(--l-avant));
   /*variables transparence*/
   --transparence-entete: 0.8;
   --transparence-body: 0.5;
@@ -41,7 +59,7 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 40vh;
+  min-height: 20vh;
 }
 
 .global > section,
@@ -49,15 +67,15 @@ body {
 .global > footer {
   flex: 0 1 var(--body-largeur);
   padding: 3rem 1rem;
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 #entete, #footer {
-  min-height: 20vh;
+  min-height: 25vh;
 }
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-avant-entete);
 }
 
 header {
@@ -68,18 +86,22 @@ header {
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
+  color: var(--couleur-avant-accueil);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-avant-evenement);
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-avant-galerie);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-avant-footer);
 }
 
 /*
