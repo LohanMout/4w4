@@ -1,5 +1,6 @@
-# Labo 1
-## Tous les ajouts pour la remise:
+# Labo 2
+## Utilisation de la fonction hsl()
+## Integration d'effet vague et diagonal
 
 - Background color en dégradé bleu marin
 - Ajouts de nouvelles variables
