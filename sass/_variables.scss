@@ -8,9 +8,10 @@
 
     //teinte de couleur
     --u1: 180; //couleur initial
-    --u2: calc(var(--u1) + 10); //couleur complementaire
-    --u3: calc(var(--u2) + 10);
-    --u4: calc(var(--u3) + 10);
+    --u2: calc(var(--u1) + 15); //couleur complementaire
+    --u3: calc(var(--u2) + 15);
+    --u4: calc(var(--u3) + 15);
+    --u5: calc(var(--u4) + 15);
     //saturation
     --s-arriere: 100%;
     --s-avant: 50%; 
@@ -22,13 +23,13 @@
     --couleur-arriere-accueil : hsl(var(--u2), var(--s-arriere), var(--l-arriere));
     --couleur-arriere-evenement : hsl(var(--u3), var(--s-arriere), var(--l-arriere));
     --couleur-arriere-galerie : hsl(var(--u4), var(--s-arriere), var(--l-arriere));
-    --couleur-arriere-footer : hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-footer : hsl(var(--u5), var(--s-arriere), var(--l-arriere));
     //couleur avant plan
     --couleur-avant-entete : hsl(var(--u1), var(--s-avant), var(--l-avant));
     --couleur-avant-accueil : hsl(var(--u2), var(--s-avant), var(--l-avant));
     --couleur-avant-evenement : hsl(var(--u3), var(--s-avant), var(--l-avant));
     --couleur-avant-galerie : hsl(var(--u4), var(--s-avant), var(--l-avant));
-    --couleur-avant-footer : hsl(var(--u4), var(--s-avant), var(--l-avant));
+    --couleur-avant-footer : hsl(var(--u5), var(--s-avant), var(--l-avant));
 
     /*variables transparence*/
     --transparence-entete : 0.8;

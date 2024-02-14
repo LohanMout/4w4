@@ -38,4 +38,16 @@
         </footer>
     </div>
 </body>
+<script>
+    let root = document.documentElement;
+    let style = getComputedStyle(root);
+    let u1 = style.getPropertyValue("--u1")
+    let u1Plus = Number(u1) + 1;
+    function changerCouleur(){
+        root.style.setProperty("--u1", u1Plus);
+        u1Plus++;
+    }
+    setInterval(changerCouleur, 100);
+    
+</script>
 </html>
