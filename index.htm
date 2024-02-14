@@ -15,21 +15,41 @@
         <header>
             <h1>Thème de Lohan Moutquin</h1>
         </header>
+        <div class="vague">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
     </div>
     <div id="accueil" class="global">
         <section>
             <h2>Accueil</h2>
         </section>
+        <div class="vague">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill" style="fill: var(--couleur-arriere-evenement)"></path>
+            </svg>
+        </div>
     </div>
     <div id="evenement" class="global">
         <section>
             <h3>Événement</h3>
         </section>
+        <div class="vague">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill" style="fill: var(--couleur-arriere-galerie)"></path>
+            </svg>
+        </div>
     </div>
     <div id="galerie" class="global">
         <section>
             <h4>Galerie</h4>
         </section>
+        <div class="vague">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill" style="fill: var(--couleur-arriere-footer)"></path>
+            </svg>
+        </div>
     </div>
     <div id="footer" class="global">
         <footer>
@@ -42,12 +62,13 @@
     let root = document.documentElement;
     let style = getComputedStyle(root);
     let u1 = style.getPropertyValue("--u1")
-    let u1Plus = Number(u1) + 1;
+    let u1Plus = Number(u1) + 0.2;
+
     function changerCouleur(){
         root.style.setProperty("--u1", u1Plus);
-        u1Plus++;
+        u1Plus = u1Plus + 0.2;
     }
-    setInterval(changerCouleur, 100);
+    setInterval(changerCouleur, 20);
     
 </script>
 </html>

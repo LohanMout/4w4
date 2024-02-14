@@ -8,10 +8,10 @@
 
     //teinte de couleur
     --u1: 180; //couleur initial
-    --u2: calc(var(--u1) + 15); //couleur complementaire
-    --u3: calc(var(--u2) + 15);
-    --u4: calc(var(--u3) + 15);
-    --u5: calc(var(--u4) + 15);
+    --u2: calc(var(--u1) - 8); //couleur complementaire
+    --u3: calc(var(--u2) - 8);
+    --u4: calc(var(--u3) - 8);
+    --u5: calc(var(--u4) - 8);
     //saturation
     --s-arriere: 100%;
     --s-avant: 50%; 
