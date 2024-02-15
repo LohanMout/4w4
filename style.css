@@ -60,7 +60,7 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 30vh;
+  min-height: 40vh;
 }
 
 .global > section,
@@ -71,7 +71,7 @@ body {
 }
 
 #entete, #footer {
-  min-height: 40vh;
+  min-height: 45vh;
 }
 
 #entete {
@@ -118,11 +118,39 @@ header {
   justify-content: center;
 }
 
-p {
+#entete header {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  font-size: 3vw;
+  padding: 5px;
+  border-radius: 8px;
+  color: hsl(var(--u1), 100%, 70%);
+  background-color: hsl(var(--u3), 100%, 30%);
+}
+
+.section p {
+  font-size: clamp(0.5rem, 0rem + 1.6vw, 1rem);
+  font-weight: 100;
+  letter-spacing: 0.8px;
   padding: 10px;
   background-color: black;
-  color: hsl(var(--u1), 100%, 50%);
+  color: hsl(var(--u1), 100%, 70%);
   opacity: 20%;
+}
+
+#evenement .section p {
+  color: hsl(calc(var(--u1) - 180), 100%, 70%);
 }
 
 /*
