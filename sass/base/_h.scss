@@ -6,36 +6,36 @@ h1{
    font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
    font-weight: 500;
    font-style: normal;
-   color: rgba(255, 255, 255, var(--transparence-entete));
+   color: rgba(0, 0, 0, var(--transparence-entete));
 }
 
 h2{
    font-size: clamp(1rem, -1.656rem + 8.5vw, 3.125rem);
    font-weight: 400;
    font-style: normal;
-   color: rgba(rgb(255, 255, 255), var(--transparence-body));
+   color: rgba(rgb(0, 0, 0), var(--transparence-body));
 }
 h3{
    font-size: clamp(1rem, -0.813rem + 5.8vw, 2.813rem);
    font-weight: 400;
    font-style: normal;
-   color: rgba(rgb(255, 255, 255), var(--transparence-body));
+   color: rgba(rgb(0, 0, 0), var(--transparence-body));
 }
 h4{
    font-size: clamp(1rem, -0.5rem + 4.8vw, 2.5rem);
    font-weight: 400;
    font-style: normal;
-   color: rgba(rgb(255, 255, 255), var(--transparence-body));
+   color: rgba(rgb(0, 0, 0), var(--transparence-body));
 }
 h5{
    font-size: clamp(1rem, -0.188rem + 3.8vw, 2.188rem);
    font-weight: 300;
    font-style: normal;
-   color: rgba(rgb(222, 222, 222), var(--transparence-footer));
+   color: rgba(rgb(0, 0, 0), var(--transparence-footer));
 }
 h6{
    font-size: clamp(1rem, 0.75rem + 0.8vw, 1.25rem);
    font-weight: 300;
    font-style: normal;
-   color: rgba(rgb(197, 197, 197), var(--transparence-footer));
+   color: rgba(rgb(50, 50, 50), var(--transparence-footer));
 }

@@ -12,7 +12,7 @@ body{
 .global {
     display: flex;
     justify-content: center;
-    min-height : 20vh;
+    min-height : 30vh;
 }
 
 .global > section,
@@ -22,7 +22,7 @@ body{
     padding: 3rem 1rem;
 }
 #entete, #footer{
-    min-height: 25vh;
+    min-height: 40vh;
 }
 
 #entete{
@@ -54,4 +54,17 @@ header{
     background-color: var(--couleur-arriere-footer);
     color: var(--couleur-avant-footer);
     position: relative;
+}
+.section{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    padding: 10px;
+    background-color: black;
+    color: hsl(var(--u1), 100%, 50%);
+    opacity: 20%;
 }

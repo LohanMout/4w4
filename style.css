@@ -39,9 +39,9 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --couleur-avant-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
   --couleur-avant-footer: hsl(var(--u5), var(--s-avant), var(--l-avant));
   /*variables transparence*/
-  --transparence-entete: 0.8;
-  --transparence-body: 0.5;
-  --transparence-footer: 0.35;
+  --transparence-entete: 0.6;
+  --transparence-body: 0.45;
+  --transparence-footer: 0.3;
   /*variables largeurs*/
   --body-largeur: 900px;
 }
@@ -60,7 +60,7 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 20vh;
+  min-height: 30vh;
 }
 
 .global > section,
@@ -71,7 +71,7 @@ body {
 }
 
 #entete, #footer {
-  min-height: 25vh;
+  min-height: 40vh;
 }
 
 #entete {
@@ -110,6 +110,21 @@ header {
   position: relative;
 }
 
+.section {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  padding: 10px;
+  background-color: black;
+  color: hsl(var(--u1), 100%, 50%);
+  opacity: 20%;
+}
+
 /*
 https://chrisburnell.com/clamp-calculator/
 */
@@ -117,42 +132,42 @@ h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 500;
   font-style: normal;
-  color: rgba(255, 255, 255, var(--transparence-entete));
+  color: rgba(0, 0, 0, var(--transparence-entete));
 }
 
 h2 {
   font-size: clamp(1rem, -1.656rem + 8.5vw, 3.125rem);
   font-weight: 400;
   font-style: normal;
-  color: rgba(255, 255, 255, var(--transparence-body));
+  color: rgba(0, 0, 0, var(--transparence-body));
 }
 
 h3 {
   font-size: clamp(1rem, -0.813rem + 5.8vw, 2.813rem);
   font-weight: 400;
   font-style: normal;
-  color: rgba(255, 255, 255, var(--transparence-body));
+  color: rgba(0, 0, 0, var(--transparence-body));
 }
 
 h4 {
   font-size: clamp(1rem, -0.5rem + 4.8vw, 2.5rem);
   font-weight: 400;
   font-style: normal;
-  color: rgba(255, 255, 255, var(--transparence-body));
+  color: rgba(0, 0, 0, var(--transparence-body));
 }
 
 h5 {
   font-size: clamp(1rem, -0.188rem + 3.8vw, 2.188rem);
   font-weight: 300;
   font-style: normal;
-  color: rgba(222, 222, 222, var(--transparence-footer));
+  color: rgba(0, 0, 0, var(--transparence-footer));
 }
 
 h6 {
   font-size: clamp(1rem, 0.75rem + 0.8vw, 1.25rem);
   font-weight: 300;
   font-style: normal;
-  color: rgba(197, 197, 197, var(--transparence-footer));
+  color: rgba(50, 50, 50, var(--transparence-footer));
 }
 
 .vague {
@@ -174,4 +189,22 @@ h6 {
 
 .vague .shape-fill {
   fill: var(--couleur-arriere-accueil);
+}
+
+.diagonal {
+  position: relative;
+  z-index: 1;
+}
+
+.diagonal::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: -4.5vw;
+  bottom: -4.5vw;
+  background-color: hsl(calc(var(--u3) + 180), 100%, 30%);
+  transform: skewY(3.5deg);
+  z-index: -1;
+  opacity: 100%;
 }/*# sourceMappingURL=style.css.map */
