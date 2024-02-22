@@ -21,6 +21,10 @@ body{
     flex : 0 1 var(--body-largeur);
     padding: 3rem 1rem;
 }
+.global > header{
+    flex: 1;
+}
+
 #entete, #footer{
     min-height: 45vh;
 }
@@ -32,7 +36,7 @@ body{
 }
 header{
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
 }
 #accueil{
@@ -71,14 +75,19 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    text-align: center;
 }
-a{
+nav > a{
     text-decoration: none;
-    font-size: 3vw;
+    font-size: 1.5vw;
     padding: 5px;
     border-radius: 8px;
     color: hsl(var(--u1), 100%, 70%);
     background-color: hsl(var(--u3), 100%, 30%);
+}
+nav > a:hover{
+    font-size: 2vw;
+    transition: font-size, 0.4s;
 }
 .section p{
     font-size: clamp(0.5rem, 0rem + 1.6vw, 1rem);
@@ -92,4 +101,10 @@ a{
 
 #evenement .section p{
     color: hsl(calc(var(--u1) - 180), 100%, 70%);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

@@ -43,7 +43,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --transparence-body: 0.45;
   --transparence-footer: 0.3;
   /*variables largeurs*/
-  --body-largeur: 900px;
+  --body-largeur: 1100px;
 }
 
 * {
@@ -70,6 +70,10 @@ body {
   padding: 3rem 1rem;
 }
 
+.global > header {
+  flex: 1;
+}
+
 #entete, #footer {
   min-height: 45vh;
 }
@@ -82,7 +86,7 @@ body {
 
 header {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
 }
 
@@ -128,15 +132,21 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  text-align: center;
 }
 
-a {
+nav > a {
   text-decoration: none;
-  font-size: 3vw;
+  font-size: 1.5vw;
   padding: 5px;
   border-radius: 8px;
   color: hsl(var(--u1), 100%, 70%);
   background-color: hsl(var(--u3), 100%, 30%);
+}
+
+nav > a:hover {
+  font-size: 2vw;
+  transition: font-size, 0.4s;
 }
 
 .section p {
@@ -151,6 +161,13 @@ a {
 
 #evenement .section p {
   color: hsl(calc(var(--u1) - 180), 100%, 70%);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*
@@ -196,6 +213,44 @@ h6 {
   font-weight: 300;
   font-style: normal;
   color: rgba(50, 50, 50, var(--transparence-footer));
+}
+
+.entete__header {
+  background-image: url("images/LM.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+.bouton {
+  font-size: 2rem;
+  padding: 12px 24px;
+  margin: 10px;
+  background-color: hsl(calc(var(--u3) + 180), 100%, 30%);
+}
+
+.bouton:hover {
+  background-color: hsl(calc(var(--u3) + 180), 100%, 40%);
+}
+
+.bouton:active {
+  background-color: hsl(calc(var(--u3) + 210), 100%, 40%);
+}
+
+.lien {
+  font-size: 1.5rem;
+  color: #1922d8;
+}
+
+.lien:hover {
+  color: #5259da;
+}
+
+.lien:visited {
+  color: #1d1f50;
+}
+
+.lien:visited:hover {
+  color: #27283d;
 }
 
 .vague {

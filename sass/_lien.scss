@@ -1,0 +1,13 @@
+.lien{
+    font-size: 1.5rem;
+    color: rgba($color: #1922d8, $alpha: 1.0);
+}
+.lien:hover{
+    color: rgba($color: #5259da, $alpha: 1.0);
+}
+.lien:visited{
+    color: rgba($color: #1d1f50, $alpha: 1.0);
+}
+.lien:visited:hover{
+    color: rgba($color: #27283d, $alpha: 1.0)
+}
