@@ -33,6 +33,13 @@
     <div id="accueil" class="global">
         <section class="section">
             <h2>Accueil</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quidem aperiam, numquam voluptatum fugiat mollitia harum dolorem quod corporis similique porro dolorum veniam iste a tempora quo. Quas, illo nam?</p>
+            <a href="#accueil" class="lien">En savoir plus</a>
+        </section>
+    </div>
+    <div id="evenement" class="global diagonal">
+        <section class="section">
+            <h3>Événement</h3>
             <div class="cours">
             <?php 
             /*
@@ -57,19 +64,12 @@
                     <div class="carte">
                         <p><?php echo $sigle;?></p>
                         <h3><?php echo $nomCours;?></h3> 
-                        <p><?php echo $duree?></p>
+                        <h6><?php echo $duree?></h6>
                         <p><?php echo wp_trim_words(get_the_content(), 30);?></p>
                     </div>
                     <?php endwhile; ?>
                     <?php endif; ?>
             </div>
-            <a href="#accueil" class="lien">En savoir plus</a>
-        </section>
-    </div>
-    <div id="evenement" class="global diagonal">
-        <section class="section">
-            <h3>Événement</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quidem aperiam, numquam voluptatum fugiat mollitia harum dolorem quod corporis similique porro dolorum veniam iste a tempora quo. Quas, illo nam?</p>
             <a href="#evenement" class="lien">En savoir plus</a>
         </section>
     </div>
