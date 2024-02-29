@@ -290,4 +290,19 @@ h6 {
   transform: skewY(3.5deg);
   z-index: -1;
   opacity: 100%;
+}
+
+.cours {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 20%;
+  border: 1px solid black;
 }/*# sourceMappingURL=style.css.map */
