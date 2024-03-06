@@ -9,14 +9,22 @@
 */
 
 .menu-menu_4w4-container {
-    background-color: black;
+    background-color: var(--couleur-arriere-entete);
+    width: 100%;
+    margin-top: 20px;
     .menu{
-        
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .menu-item{
-
+        list-style-type: none;
     }
-    .menu-item-a{
-
+    .menu-item a{
+        text-decoration: none;
+        color: hsl(var(--u1), 100%, 70%);
+        font-size: 20px;
+        padding: 3px;
     }
 }

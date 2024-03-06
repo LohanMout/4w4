@@ -13,7 +13,7 @@
 <body>
 <div id="menu" class="global">
     <header class="menu__header">
-        <?php wp_nav_menu(array("conteneur" => "nav"))?>
+        <?php wp_nav_menu(array("container" => "nav"))?>
     </header>
 </div>
     <div id="entete" class="global">

@@ -58,6 +58,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Protest Strike", sans-serif;
+  background-color: var(--couleur-arriere-entete);
 }
 
 .global {
@@ -329,5 +330,22 @@ h6 {
 </div>
 */
 .menu-menu_4w4-container {
-  background-color: black;
+  background-color: var(--couleur-arriere-entete);
+  width: 100%;
+  margin-top: 20px;
+}
+.menu-menu_4w4-container .menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-menu_4w4-container .menu-item {
+  list-style-type: none;
+}
+.menu-menu_4w4-container .menu-item a {
+  text-decoration: none;
+  color: hsl(var(--u1), 100%, 70%);
+  font-size: 20px;
+  padding: 3px;
 }/*# sourceMappingURL=style.css.map */
