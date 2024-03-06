@@ -11,8 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
 </head>
 <body>
+<div id="menu" class="global">
+    <header class="menu__header">
+        <?php wp_nav_menu(array("conteneur" => "nav"))?>
+    </header>
+</div>
     <div id="entete" class="global">
-        <header class="entete__header">
+        <header class="hero">
             <h1>Thème de Lohan Moutquin</h1>
             <h2>4W4-Conception d'interface et développement web</h2>
             <h3>TIM - College de Maisonneuve</h3>

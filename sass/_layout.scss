@@ -12,16 +12,15 @@ body{
 .global {
     display: flex;
     justify-content: center;
-    min-height : 40vh;
 }
 
 .global > section,
-.global > header,
+.global > .hero,
 .global > footer {
     flex : 0 1 var(--body-largeur);
     padding: 3rem 1rem;
 }
-.global > header{
+.global > .hero{
     flex: 1;
 }
 
@@ -29,12 +28,15 @@ body{
     min-height: 45vh;
 }
 
+#menu {
+}
+
 #entete{
     background-color: var(--couleur-arriere-entete);
     color: var(--couleur-avant-entete);
     position: relative;
 }
-header{
+.hero{
     display: flex;
     align-items: baseline;
     justify-content: center;

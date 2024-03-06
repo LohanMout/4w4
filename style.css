@@ -63,17 +63,16 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 40vh;
 }
 
 .global > section,
-.global > header,
+.global > .hero,
 .global > footer {
   flex: 0 1 var(--body-largeur);
   padding: 3rem 1rem;
 }
 
-.global > header {
+.global > .hero {
   flex: 1;
 }
 
@@ -87,7 +86,7 @@ body {
   position: relative;
 }
 
-header {
+.hero {
   display: flex;
   align-items: baseline;
   justify-content: center;
@@ -223,7 +222,7 @@ h6 {
   padding: 5px;
 }
 
-.entete__header {
+.hero {
   background-image: url("images/LM.png");
   background-repeat: no-repeat;
   background-position: 100% 50%;
@@ -318,4 +317,17 @@ h6 {
 
 .carte h3 {
   height: 100%;
+}
+
+/*
+<div class="menu-menu_4w4-container">
+<ul id="menu-menu_4w4" class="menu">
+<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-31"><a href="http://localhost:8000/4w4/2020/10/07/582-6n3-stage-285h/">Stage</a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-32"><a href="http://localhost:8000/4w4/2020/10/07/582-5mbtechnologies-emergentes-et-avancees-volet-creation-60h/">Technologie emergente</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"><a href="http://localhost:8000/4w4/2020/10/07/582-5w5-projet-web-en-equipe-105h/">Projet web en equipe</a></li>
+</ul>
+</div>
+*/
+.menu-menu_4w4-container {
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */
