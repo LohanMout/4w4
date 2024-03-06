@@ -45,6 +45,9 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   /*variables largeurs*/
   --body-largeur: 1100px;
 }
+:root .carte {
+  --_couleur-arriere-evenement: hsl(calc(var(--u3)-180), 50%, 20%);
+}
 
 * {
   margin: 0;
@@ -300,14 +303,19 @@ h6 {
 .cours {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
 }
 
 .carte {
+  background-color: var(--_couleur-arriere-evenement);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 30%;
+  justify-content: center;
+  flex: 1 0 275px;
   border: 1px solid black;
+}
+
+.carte h3 {
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

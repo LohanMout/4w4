@@ -1,13 +1,17 @@
 .cours{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
 }
 .carte{
+    background-color: var(--_couleur-arriere-evenement);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 30%; //mettre a 23% pour 4 colonnes
+    justify-content: center;
+    flex: 1 0 calc(1100px/4);
     border: 1px solid black;
+}
+.carte h3{
+    height: 100%;
 }
