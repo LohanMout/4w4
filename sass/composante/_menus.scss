@@ -8,23 +8,51 @@
 </div>
 */
 
-.menu-menu_4w4-container {
+.menu-menu_4w4-container{
     background-color: var(--couleur-arriere-entete);
     width: 100%;
     margin-top: 20px;
-    .menu{
-        width: 100%;
+    .menu {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
+        transform: translateX(300%);
+        padding-top: 0px;
+        transition: transform 0.8s;
+        @media (min-width: 930px) {
+            transform: translateX(0%);
+            flex-direction: row;
+            padding-top: 30px;
+        }
+
     }
-    .menu-item{
+
+    .menu-item {
         list-style-type: none;
     }
-    .menu-item a{
+
+    .menu-item a {
         text-decoration: none;
         color: hsl(var(--u1), 100%, 70%);
         font-size: 20px;
         padding: 3px;
     }
+}
+
+#burger {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    @media (min-width: 930px) {
+        display: none;
+    }
+}
+
+#chk_burger{
+    display: none;
+}
+
+#chk_burger:checked + .menu__header > .menu-menu_4w4-container > .menu{
+    transform: translateX(0);
 }
