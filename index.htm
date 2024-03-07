@@ -1,21 +1,37 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thème du moutquineux</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="http://localhost:8000/4w4/wp-content/themes/4w4-2024-gr1-main/normalize.css">
-    <link rel="stylesheet" href="http://localhost:8000/4w4/wp-content/themes/4w4-2024-gr1-main/style.css"> -->
+    <link rel="stylesheet" href="http://localhost:8000/4w4/wp-content/themes/4w4-2024-gr1-main/normalize.css">
+    <link rel="stylesheet" href="http://localhost:8000/4w4/wp-content/themes/4w4-2024-gr1-main/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <div id="menu" class="global">
+        <label id="burger" for="chk_burger">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#000">
+                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            </svg>
+        </label>
+        <input type="checkbox" id="chk_burger">
+        <header class="menu__header">
+            <nav class="menu-menu_4w4-container"><ul id="menu-menu_4w4" class="menu"><li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-41"><a href="http://localhost:8000/4w4" aria-current="page">Accueil &#8211;</a></li>
+<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-31"><a href="http://localhost:8000/4w4/2020/10/07/582-6n3-stage-285h/">Stage &#8211;</a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-32"><a href="http://localhost:8000/4w4/2020/10/07/582-5mbtechnologies-emergentes-et-avancees-volet-creation-60h/">Technologie emergente &#8211;</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"><a href="http://localhost:8000/4w4/2020/10/07/582-5w5-projet-web-en-equipe-105h/">Projet web en equipe &#8211;</a></li>
+<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-36"><a href="http://localhost:8000/4w4/2020/10/07/360-4j4-creation-de-jeu-en-equipe-105h/">Creation de jeu en equipe &#8211;</a></li>
+<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-37"><a href="http://localhost:8000/4w4/2020/10/07/582-3j3-creation-de-jeu-3d-75h/">Creation de jeu en 3D</a></li>
+</ul></nav>        </header>
+    </div>
     <div id="entete" class="global">
-        <header class="entete__header">
+        <header class="hero">
             <h1>Thème de Lohan Moutquin</h1>
             <h2>4W4-Conception d'interface et développement web</h2>
             <h3>TIM - College de Maisonneuve</h3>
@@ -28,12 +44,10 @@
             </nav>
         </header>
         <div class="vague">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
-    </div>
-    <div id="accueil" class="global">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>    </div>    <div id="accueil" class="global">
         <section class="section">
             <h2>Accueil</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quidem aperiam, numquam voluptatum fugiat mollitia harum dolorem quod corporis similique porro dolorum veniam iste a tempora quo. Quas, illo nam?</p>
@@ -193,11 +207,10 @@
             <a href="#galerie" class="lien">En savoir plus</a>
         </section>
         <div class="vague">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill" style="fill: var(--couleur-arriere-footer)"></path>
-            </svg>
-        </div>
-    </div>
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill" style="fill: var(--couleur-arriere-footer)"></path>
+    </svg>
+</div>    </div>
     <div id="footer" class="global">
         <footer>
             <h5>Footer</h5>
