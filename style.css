@@ -319,20 +319,19 @@ h6 {
 }
 
 /*
-<div class="menu-menu_4w4-container">
-<ul id="menu-menu_4w4" class="menu">
-<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-31"><a href="http://localhost:8000/4w4/2020/10/07/582-6n3-stage-285h/">Stage</a></li>
-<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-32"><a href="http://localhost:8000/4w4/2020/10/07/582-5mbtechnologies-emergentes-et-avancees-volet-creation-60h/">Technologie emergente</a></li>
-<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"><a href="http://localhost:8000/4w4/2020/10/07/582-5w5-projet-web-en-equipe-105h/">Projet web en equipe</a></li>
-</ul>
-</div>
+<nav class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-16"><a href="http://localhost:8000/4w4/?p=15">Yangshuo, Chine</a></li>
+<li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-17"><a href="http://localhost:8000/4w4/?p=13">Torres del Paine, Chili</a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-18"><a href="http://localhost:8000/4w4/?p=11">Mont Fuji, Japon</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a href="#galerie">Galerie</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20"><a href="#evenement">Evenement</a></li>
+</ul></nav>        </header>
 */
-.menu-menu_4w4-container {
+.menu-principal-container {
   background-color: var(--couleur-arriere-entete);
   width: 100%;
   margin-top: 20px;
 }
-.menu-menu_4w4-container .menu {
+.menu-principal-container .menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -341,16 +340,16 @@ h6 {
   transition: transform 0.8s;
 }
 @media (min-width: 930px) {
-  .menu-menu_4w4-container .menu {
+  .menu-principal-container .menu {
     transform: translateX(0%);
     flex-direction: row;
     padding-top: 30px;
   }
 }
-.menu-menu_4w4-container .menu-item {
+.menu-principal-container .menu-item {
   list-style-type: none;
 }
-.menu-menu_4w4-container .menu-item a {
+.menu-principal-container .menu-item a {
   text-decoration: none;
   color: hsl(var(--u1), 100%, 70%);
   font-size: 20px;
@@ -373,6 +372,6 @@ h6 {
   display: none;
 }
 
-#chk_burger:checked + .menu__header > .menu-menu_4w4-container > .menu {
+#chk_burger:checked + .menu__header > .menu-principal-container > .menu {
   transform: translateX(0);
 }/*# sourceMappingURL=style.css.map */

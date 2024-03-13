@@ -24,12 +24,10 @@
                 if(have_posts()):
                     while(have_posts()): the_post(); 
                     $titre = get_the_title();
-                    //titre
-                    //strpos()
                     ?>
                     <div class="carte">
-                        <h3><?php echo $nomCours;?></h3> 
-                        <p><?php echo wp_trim_words(get_the_content(), 30);?></p>
+                        <h3><?php echo $titre;?></h3> 
+                        <p><?php echo wp_trim_words(get_the_content(), 10);?></p>
                     </div>
                     <?php endwhile; ?>
                     <?php endif; ?>
