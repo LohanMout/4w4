@@ -1,8 +1,8 @@
 <?php get_header();?>
     <div id="accueil" class="global">
         <section class="section">
-            <h2>Accueil</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quidem aperiam, numquam voluptatum fugiat mollitia harum dolorem quod corporis similique porro dolorum veniam iste a tempora quo. Quas, illo nam?</p>
+            <h2><?php get_bloginfo("name")?></h2>
+            <p><?php get_bloginfo("description")?></p>
             <a href="#accueil" class="lien">En savoir plus</a>
         </section>
     </div>
@@ -12,15 +12,12 @@
             <div class="cours">
             <?php 
                 if(have_posts()):
-                    while(have_posts()): the_post(); 
                     $titre = get_the_title();
                     ?>
                     <div class="carte">
-                        <h3><?php the_title();?></h3> 
-                        <p><?php echo wp_trim_words(get_the_content(), 10);?></p>
-                        <a href="<?php the_permalink();?>">suite</a>
+                        <h2><?php the_title()?></h2> 
+                        <p><?php the_content();?></p>
                     </div>
-                    <?php endwhile; ?>
                     <?php endif; ?>
             </div>
             <a href="#evenement" class="lien">En savoir plus</a>
@@ -34,7 +31,13 @@
         </section>
         <?php get_template_part("gabarits/vague2")?>
     </div>
-    <?php get_footer()?>
+    <div id="footer" class="global">
+        <footer>
+            <h5>Footer</h5>
+            <h6>petit footer</h6>
+            <img src="images/blue.png">
+        </footer>
+    </div>
 </body>
 <script>
     let root = document.documentElement;
