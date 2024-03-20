@@ -28,7 +28,7 @@
                     //strpos()
                     ?>
                     <div class="carte">
-                        <h3><?php echo $nomCours;?></h3> 
+                        <h3><?php echo $titre;?></h3> 
                         <p><?php echo wp_trim_words(get_the_content(), 30);?></p>
                         
                     </div>
