@@ -318,6 +318,11 @@ h6 {
   height: 100%;
 }
 
+.post-categories {
+  display: flex;
+  list-style-type: none;
+}
+
 /*
 <nav class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-16"><a href="http://localhost:8000/4w4/?p=15">Yangshuo, Chine</a></li>
 <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-17"><a href="http://localhost:8000/4w4/?p=13">Torres del Paine, Chili</a></li>

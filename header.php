@@ -27,9 +27,8 @@
     </div>
     <div id="entete" class="global">
         <header class="hero">
-            <h1>Thème de Lohan Moutquin</h1>
-            <h2>4W4-Conception d'interface et développement web</h2>
-            <h3>TIM - College de Maisonneuve</h3>
+            <h1><?php echo get_bloginfo("titre")?></h1>
+            <h2><?php echo get_bloginfo("description")?></h2>
             <button class="bouton">Événements</button>
             <nav>
                 <a href="#accueil">Accueil</a>
