@@ -141,13 +141,13 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 }
 
 .clr-agencement-primaire {
-  color: hsl(220, 100%, 15%);
-  background-image: linear-gradient(90deg, hsl(220, 100%, 85%), hsl(220, 100%, 60%));
+  color: hsl(220, 100%, 30%);
+  background-image: linear-gradient(180deg, hsl(220, 100%, 85%), hsl(220, 100%, 60%));
 }
 
 .clr-agencement-secondaire {
-  color: hsl(40, 100%, 15%);
-  background-color: hsl(40, 100%, 85%);
+  color: hsl(40, 100%, 85%);
+  background-image: linear-gradient(180deg, hsl(40, 100%, 30%), hsl(40, 100%, 50%));
 }
 
 .clr-agencement-ternaire {
@@ -167,7 +167,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --couleur-arriere-evenement : #0048ff;
   --couleur-arriere-galerie : #0028ff;
   --couleur-arriere-footer : #0008ff;*/
-  --u1: 180;
+  --u1: 225;
   --u2: calc(var(--u1) - 8);
   --u3: calc(var(--u2) - 8);
   --u4: calc(var(--u3) - 8);
@@ -206,7 +206,6 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Protest Strike", sans-serif;
-  background-color: var(--couleur-arriere-entete);
   overflow-x: hidden;
 }
 
@@ -231,7 +230,6 @@ body {
 }
 
 #entete {
-  background-color: var(--couleur-arriere-entete);
   color: var(--couleur-avant-entete);
   position: relative;
 }
@@ -290,8 +288,6 @@ nav > a {
   font-size: 1.5vw;
   padding: 5px;
   border-radius: 8px;
-  color: hsl(var(--u1), 100%, 70%);
-  background-color: hsl(var(--u3), 100%, 30%);
 }
 
 nav > a:hover {
@@ -370,24 +366,15 @@ h6 {
 }
 
 .hero {
-  background-image: url("images/LM.png");
+  background-image: url("images/soleil.png");
   background-repeat: no-repeat;
-  background-position: 100% 50%;
+  background-position: 100% 130%;
 }
 
 .bouton {
   font-size: 2rem;
   padding: 12px 24px;
   margin: 10px;
-  background-color: hsl(calc(var(--u3) + 180), 100%, 30%);
-}
-
-.bouton:hover {
-  background-color: hsl(calc(var(--u3) + 180), 100%, 40%);
-}
-
-.bouton:active {
-  background-color: hsl(calc(var(--u3) + 210), 100%, 40%);
 }
 
 .lien {
@@ -424,10 +411,6 @@ h6 {
   height: 51px;
 }
 
-.vague .shape-fill {
-  fill: var(--couleur-arriere-accueil);
-}
-
 .diagonal {
   position: relative;
   z-index: 1;
@@ -440,7 +423,6 @@ h6 {
   right: 0;
   top: -4.5vw;
   bottom: -4.5vw;
-  background-color: hsl(calc(var(--u3) + 180), 100%, 30%);
   transform: skewY(3.5deg);
   z-index: -1;
   opacity: 100%;
@@ -454,7 +436,6 @@ h6 {
 }
 
 .carte {
-  background-color: var(--_couleur-arriere-evenement);
   display: flex;
   flex-direction: column;
   justify-content: center;

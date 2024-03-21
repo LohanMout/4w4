@@ -7,7 +7,7 @@ body{
  display : flex;
  flex-direction : column;
  font-family: 'Protest Strike', sans-serif;
- background-color: var(--couleur-arriere-entete);
+ //background-color: var(--couleur-arriere-entete);
  overflow-x: hidden;
 }
 
@@ -29,7 +29,7 @@ body{
     min-height: 45vh;
 }
 #entete{
-    background-color: var(--couleur-arriere-entete);
+    //background-color: var(--couleur-arriere-entete);
     color: var(--couleur-avant-entete);
     position: relative;
 }
@@ -80,8 +80,8 @@ nav > a{
     font-size: 1.5vw;
     padding: 5px;
     border-radius: 8px;
-    color: hsl(var(--u1), 100%, 70%);
-    background-color: hsl(var(--u3), 100%, 30%);
+    //color: hsl(var(--u1), 100%, 70%);
+    //background-color: hsl(var(--u3), 100%, 30%);
 }
 nav > a:hover{
     font-size: 2vw;

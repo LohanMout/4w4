@@ -25,11 +25,11 @@
             <?php wp_nav_menu(array("container" => "nav")); ?>
         </header>
     </div>
-    <div id="entete" class="global">
+    <div id="entete" class="global clr-agencement-secondaire">
         <header class="hero">
-            <h1><?php echo get_bloginfo("titre")?></h1>
-            <h2><?php echo get_bloginfo("description")?></h2>
-            <button class="bouton">Événements</button>
+            <h1 class="clr-secondaire-400"><?php echo get_bloginfo("titre")?></h1>
+            <h2 class="clr-secondaire-300"><?php echo get_bloginfo("description")?></h2>
+            <button class="bouton clr-ternaire-100">Événements</button>
             <nav>
                 <a href="#accueil">Accueil</a>
                 <a href="#evenement">Événement</a>

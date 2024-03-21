@@ -1,5 +1,5 @@
 <?php get_header();?>
-    <div id="accueil" class="global">
+    <div id="accueil" class="global clr-primaire-200">
         <section class="section">
             <h2>Accueil</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quidem aperiam, numquam voluptatum fugiat mollitia harum dolorem quod corporis similique porro dolorum veniam iste a tempora quo. Quas, illo nam?</p>
