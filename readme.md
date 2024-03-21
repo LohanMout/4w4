@@ -1,20 +1,23 @@
-# Labo4 Lohan Moutquin
-## Remise du labo 4
-### Utilisation de Wordpress pour ajouter un menu
+# Debut TP1/Labo 5 Lohan Moutquin
+## Remise du labo 5
+### Modifications visuelles
+- Ajout de couleur avec la technique Mixin
+    - Menu couleur ciel
+    - Accueil couleur couché de soleil
+- Amélioration du menu
+    - ajout d'un logo
+    - changement de couleur
+- Nouvelle image pour le background de l'accueil
+    - thème de la plage
 
-- Ajout d'une navigation avec 5 balise a
-- Rendu du menu plus propre avec l'aide du scss
-    -correction des couleurs
-    -passe de flex direction: row a column dépendament du width de la page
-    -Ajout d'une section accueil pour revoir tout les cours
-
-- Transformation du menu en menu dynamique
-    - menu collapse lorsque que la page atteins un certain width
-    - bouton burger apparait et disparait dépendament du width de la page
-
-- Page principale est maintenant décomposé dans un gabarit
-    - le header se situt dans header.php
-    - les vagues se situt dans vague.php et vague2.php
+### Modification de la base de donnée
+- Nouvelle base de donnée
+    - plus de destination
+    - plus de classe de voyage
+    - certaines destinations qui ont maintenant plusieurs classes
+- Nouvelle affichage des cartes des destinations
+    - La page principale montre uniquement les cartes dans la classe Populaire
+    - accès aux autres cartes de destination à travers le menu
 
 # Page Github
 - https://lohanmout.github.io/4w4/
