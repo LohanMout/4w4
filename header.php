@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div id="menu" class="global">
+    <div id="menu" class="global clr-agencement-primaire">
         <?php echo get_custom_logo()?>
         <label id="burger" for="chk_burger">
             <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#000">

@@ -37,7 +37,7 @@
     </div>
     <?php get_footer()?>
 </body>
-<script>
+<!-- <script>
     let root = document.documentElement;
     let style = getComputedStyle(root);
     let u1 = style.getPropertyValue("--u1")
@@ -54,5 +54,5 @@
     }
     setInterval(changerCouleur, 20);
     
-</script>
+</script> -->
 </html>
